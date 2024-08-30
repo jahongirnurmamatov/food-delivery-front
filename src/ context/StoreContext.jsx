@@ -4,12 +4,14 @@ import { toast } from 'react-toastify';
 
 export const StoreContext = createContext(null);
 
+import { apiUrl } from "../../vite.config.js";
+
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
   const [food_list, setFoodList] = useState([]);
   const [loading, setLoading] = useState(true); // Loading state
   const [token, setToken] = useState('');
-  const url = "http://localhost:4000";
+  const url = apiUrl;
 
   const addToCart = async (itemId) => {
     setCartItems(prev => ({
