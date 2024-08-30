@@ -6,4 +6,3 @@ export default defineConfig({
   plugins: [react()],
 })
 
-export const apiUrl = 'https://food-delivery-backend-umber.vercel.app/';

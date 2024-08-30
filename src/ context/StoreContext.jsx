@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 export const StoreContext = createContext(null);
 
-import { apiUrl } from "../../vite.config.js";
+import { apiUrl } from "../url.js";
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
