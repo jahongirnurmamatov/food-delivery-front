@@ -1,1 +1,1 @@
-export const apiUrl = 'https://food-delivery-backend-umber.vercel.app/';
+export const apiUrl = 'https://food-delivery-backend-umber.vercel.app';
